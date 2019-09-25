@@ -1,0 +1,22 @@
+PODS:
+  - event_tool (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - event_tool (from `.symlinks/plugins/event_tool/ios`)
+  - Flutter (from `.symlinks/flutter/ios`)
+
+EXTERNAL SOURCES:
+  event_tool:
+    :path: ".symlinks/plugins/event_tool/ios"
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+
+SPEC CHECKSUMS:
+  event_tool: 71570f6fc10f387bb6d4d4bf1ae2d916ada7437c
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+
+PODFILE CHECKSUM: 10ae9c18d12c9ffc2275c9a159a3b1e281990db0
+
+COCOAPODS: 1.7.5
