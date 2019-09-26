@@ -2,7 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/event_tool.svg)](https://pub.dev/packages/event_tool)
 
-A Flutter plugin for add event to calendar easily.
+A Flutter plugin for add event to device calendar with alarm easily.
 based on [add_2_calendar](https://github.com/ja2375/add_2_calendar)
 
 future version:kotlin on Android,delete event on iOS
