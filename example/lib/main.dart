@@ -1,21 +1,15 @@
-import 'package:flutter/material.dart';
-import 'package:event_tool/event_tool.dart';
 import 'package:event_tool/model/event.dart';
 
-void main() => runApp(MyApp());
+//import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:event_tool/event_tool.dart';
+import 'package:flutter/material.dart';
 
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
+void main() => runApp(CupertinoApp(home: MyApp()));
 
-class _MyAppState extends State<MyApp> {
-  String _platformVersion =
-      'Flutter (Channel stable, v1.9.1+hotfix.2, on Mac OS X 10.14.6 18G95)'
-      'Xcode - develop for iOS and macOS (Xcode 11.0)'
-      'TestPlatform:iOS13.0';
-
+class MyApp extends StatelessWidget {
   final GlobalKey<ScaffoldState> scaffoldState = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     Event event = Event(
@@ -28,23 +22,39 @@ class _MyAppState extends State<MyApp> {
       alarmBefore: 5,
     );
 
-
-    return MaterialApp(
-      home: Scaffold(
-        key: scaffoldState,
-        appBar: AppBar(
-          title: const Text('Add event to calendar example'),
-        ),
-        body: Center(
-          child: RaisedButton(
-            child: Text('Add test event to device calendar'),
-            onPressed: () {
-              EventTool.addEvent(event).then((success) {
-                scaffoldState.currentState.showSnackBar(
-                    SnackBar(content: Text(success ? 'Success' : 'Error')));
-              });
-            },
-          ),
+    return CupertinoPageScaffold(
+      navigationBar: CupertinoNavigationBar(
+        middle: const Text('Event Tool'),
+      ),
+      child: Container(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
+              child: CupertinoButton(
+                child: Text('Try add event to calendar'),
+                color: Colors.black45,
+                onPressed: () {
+                  EventTool.addEvent(event).then((success) {
+                    showCupertinoDialog(
+                      context: context,
+                      builder: (context) {
+                        return CupertinoAlertDialog(
+                          title: Text('Test event'),
+                          content: Text(success ? 'Success' : 'Error'),
+                          actions: <Widget>[
+                            CupertinoDialogAction(
+                              child: Text('OK'),
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                  });
+                },
+              )),
         ),
       ),
     );

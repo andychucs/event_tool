@@ -52,7 +52,7 @@ public class SwiftEventToolPlugin: NSObject, FlutterPlugin {
                     event.calendar = eventStore.defaultCalendarForNewEvents
                     do {
                         try eventStore.save(event, span: .thisEvent)
-                    } catch _ as NSError? {
+                    } catch let e as NSError? {
                         completion?(false)
                         return
                     }
