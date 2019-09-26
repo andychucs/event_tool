@@ -1,4 +1,4 @@
-# event_tool
+# Event Tool
 
 A Flutter plugin for add event to calendar easily.
 based on [add_2_calendar](https://github.com/ja2375/add_2_calendar)
