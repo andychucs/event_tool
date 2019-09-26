@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Event event = Event(
-      title: 'Test event',
-      notes: 'example',
-      location: 'Flutter app',
+      title: 'An event',
+      notes: 'from Even Tool',
+      location: 'your position',
       startDate: DateTime.now().add(Duration(minutes: 6)),
       endDate: DateTime.now().add(Duration(minutes: 7)),
       allDay: false,
