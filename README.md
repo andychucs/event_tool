@@ -5,7 +5,7 @@ based on [add_2_calendar](https://github.com/ja2375/add_2_calendar)
 
 ## What I can do:
 
-Now you can add reminder when adding event, currently implemented on the iOS platform by Swift.This days will add Android platform code by Kotlin.
+Now you can add alarm when adding event, currently implemented on the iOS platform by Swift.This days will add Android platform code by Kotlin.
 
 ## Getting Started
 
