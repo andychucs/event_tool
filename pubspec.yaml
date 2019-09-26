@@ -1,8 +1,8 @@
 name: event_tool
 description: A Flutter plugin for add event to calendar.
 version: 0.0.2
-author: AndyZhu
-homepage: github.com/AndyZhuAZ/event_tool
+author: AndyZhu andyzhu98@vip.163.com
+homepage: https://github.com/AndyZhuAZ/event_tool
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
