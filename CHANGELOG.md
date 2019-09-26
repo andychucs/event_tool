@@ -3,9 +3,11 @@
 initial release.
 
 ## 0.0.2
-
-example in cupertino style.
+### Changed
+- example in cupertino style.
  
-future version:kotlin on Android,delete event on iOS
+## 0.0.2+1
+### Added
+- user doc
 
 
