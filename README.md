@@ -11,7 +11,7 @@ Now you can add alarm when adding event, currently implemented on the iOS platfo
 
 I suggest you create a new project and copy and paste the code as there may be problems on the latest iOS simulator.
 
-![screehot](https://github.com/AndyZhuAZ/event_tool/blob/master/screenshots/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-09-26%20%E4%B8%8B%E5%8D%884.24.15.png)
+![screenshot](https://github.com/AndyZhuAZ/event_tool/blob/master/screenshots/screenshot_01.png)
 
 ## Getting Started
 
