@@ -15,14 +15,12 @@ I suggest you create a new project and copy and paste the code as there may be p
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+add this key into your ios/Runner/info.list
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```xml
+<key>NSCalendarsUsageDescription</key>
+<string>INSERT_REASON_HERE</string>
+```
 
 ## Thanks
 [Javi Hurtado](https://github.com/ja2375)
