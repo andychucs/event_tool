@@ -10,4 +10,7 @@ initial release.
 ### Added
 - user doc
 
-
+## 0.0.2+2
+### Fixed
+- Doc
+- Format

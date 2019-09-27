@@ -1,6 +1,6 @@
 name: event_tool
 description: A Flutter plugin for add event with alarm to device calendar easily.
-version: 0.0.2+1
+version: 0.0.2+2
 author: AndyZhu <andyzhu98@vip.163.com>
 homepage: https://github.com/AndyZhuAZ/event_tool
 
