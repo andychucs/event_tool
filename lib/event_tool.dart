@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:event_tool/model/event.dart';
-import 'package:package_info/package_info.dart';
+//import 'package:package_info/package_info.dart';
 
 class EventTool {
   static const MethodChannel _channel = const MethodChannel('event_tool');
