@@ -11,6 +11,8 @@ future version:kotlin on Android,delete event on iOS
 
 Now you can add alarm when adding event, currently implemented on the iOS platform by Swift.This days will add Android platform code by Kotlin.
 
+Android Support Kotlin code is Added.(Discovered issues:You need to click "Save" after the addEvent function is called.)
+
 ## Example
 
 I suggest you create a new project and copy and paste the code as there may be problems on the latest iOS simulator.
