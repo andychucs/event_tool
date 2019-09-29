@@ -14,3 +14,9 @@ initial release.
 ### Fixed
 - Doc
 - Format
+
+## 0.0.3
+### Added
+- Android Support Kotlin cod(Discovered issues:You need to click "Save" after the addEvent function is called.)
+### Removed
+- addEventEndAfter function

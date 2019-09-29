@@ -28,21 +28,21 @@ class EventTool {
     return isAdded;
   }
 
-  //Add event ,you need pass 3 values ​​to addEventEndAfter
-  static Future<bool> addEventEndAfter(
-      int time, DateTime start, double alarm) async {
-    PackageInfo packageInfo = await PackageInfo.fromPlatform();
-
-    Event event = Event(
-      title: packageInfo.appName,
-      notes: 'from' + packageInfo.appName,
-      location: 'your position',
-      startDate: start,
-      endDate: start.add(Duration(minutes: time)),
-      allDay: false,
-      alarmBefore: alarm,
-    );
-    final bool isAdded = await addEvent(event);
-    return isAdded;
-  }
+//  //Add event ,you need pass 3 values ​​to addEventEndAfter
+//  static Future<bool> addEventEndAfter(
+//      int time, DateTime start, double alarm) async {
+//    PackageInfo packageInfo = await PackageInfo.fromPlatform();
+//
+//    Event event = Event(
+//      title: packageInfo.appName,
+//      notes: 'from' + packageInfo.appName,
+//      location: 'your position',
+//      startDate: start,
+//      endDate: start.add(Duration(minutes: time)),
+//      allDay: false,
+//      alarmBefore: alarm,
+//    );
+//    final bool isAdded = await addEvent(event);
+//    return isAdded;
+//  }
 }
